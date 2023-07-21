@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("images/pattern-bg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 31px;
+}
+
+.slider {
+    width: 95%;
+    display: flex;
+    overflow: hidden;
+    aspect-ratio: 16/16;
+    border-radius: 7px;
+    box-shadow: 0 35px 25px -20px hsl(240, 23%, 37%);
+}
+.slider img {
+    flex: 1 0 100%;
+}
+.slider-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    padding: 10px 15px 5px;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    border-radius: 25px;
+}
+a img {
+    width: 10px;
+}
+
+.curve {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.details {
+    position: relative;
+    color: hsl(240, 15%, 47%);
+    text-align: center;
+    line-height: 30px;
+    margin: 20px auto 60px;
+}
+blockquote {
+    padding-top: 40px;
+}
+.quotes {
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+.name-tag {
+    font-size: 18px;
+    margin: 20px 0;
+}
+.name-tag strong {
+    color: hsl(240, 38%, 20%);
+}
+.name-tag p {
+    color: hsl(240, 18%, 77%);
+    margin-top: -7px;
+}
+
+@media (min-width: 700px) {
+    body, .container, .name-tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body {
+        max-width: 1440px;
+        height: 700px;
+        font-size: 32px;
+        font-weight: lighter;
+    }
+    .container {
+        margin-bottom: 50px;
+        padding: 50px;
+    }
+    .wrapper {
+        width: 50%;
+        order: 2;
+        padding: 50px;
+        margin: 130px 0 80px;
+    }
+    .slider {
+        width: 90%;
+    }
+    .slider-nav {
+        padding: 0px 15px 5px;
+        bottom: 5%;
+        left: 25%;
+    }
+    .details {
+        text-align: left;
+        margin-top: 120px;
+        left: 11%;
+        z-index: 1;
+    }
+    blockquote {
+        color: hsl(240, 38%, 20%);
+        line-height: 45px;
+        padding-top: 60px;
+    }
+    .curve {
+        width: 50%;
+    }
+    .quotes {
+        width: 15%;
+        left: 20%;
+    }
+    .name-tag {
+        font-weight: bolder;
+        justify-content: flex-start;
+        margin-top: 35px;
+        gap: 10px;
+    }
+    .name-tag p {
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+
