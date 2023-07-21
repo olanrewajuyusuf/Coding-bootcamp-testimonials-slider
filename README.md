@@ -11,10 +11,10 @@ Users will be able to:
 
 ### Screenshot
 
-![](./Tanya-mobile.png)
-![](./John-mobile.png)
-![](./Tanya-desktop.png)
-![](./John-desktop.png)
+![](./images/Tanya-mobile.png)
+![](./images/John-mobile.png)
+![](./images/Tanya-desktop.png)
+![](./images/John-desktop.png)
 
 ### Links
 
